@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  height: 60%;
+  position: relative;
+  top: 20vh;
+  left: 27.5%;
+  background-color: white;
+  border-radius: 10px;
+}
+.item-1 {
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin: 22px 20px;
+  color: hsl(228, 12%, 48%);
+}
+.perfume-name {
+  font-family: "Fraunces", serif;
+  margin: 20px 20px;
+  font-size: 34px;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+.desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 20px 20px;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5em;
+}
+.price-1 {
+  margin: 20px 20px;
+  font-size: 34px;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+.price-2 {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  position: relative;
+  bottom: 1vh;
+  text-decoration: line-through;
+}
+button {
+  display: block;
+  border: 0px;
+  width: 85%;
+  height: 10%;
+  border-radius: 5px;
+  margin: 20px 20px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  transition: 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 50%, 27%);
+    width: 89%;
+    height: 11%;
+    margin: 20px 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    width: 95%;
+    height: 95%;
+    right: 5px;
+    
+  }
+  .item-1 {
+    width: 100%;
+    height: 35%;
+  }
+  
+}
+
+/*
+<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+
+  Preview
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart
+  */
